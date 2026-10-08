@@ -270,3 +270,1258 @@
       border-color: var(--border);
       background: rgba(255, 255, 255, 0.025);
       color: var(--text);
+    }
+
+    .button-secondary:hover {
+      border-color: rgba(93, 183, 255, 0.5);
+      background: rgba(93, 183, 255, 0.06);
+    }
+
+    .terminal-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(10, 23, 34, 0.88);
+      box-shadow: var(--shadow);
+    }
+
+    .terminal-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.95rem 1rem;
+      border-bottom: 1px solid var(--border);
+      background: #0a151f;
+    }
+
+    .terminal-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ff6b6b;
+    }
+
+    .terminal-dot:nth-child(2) {
+      background: #ffd166;
+    }
+
+    .terminal-dot:nth-child(3) {
+      background: #36e3a5;
+    }
+
+    .terminal-title {
+      margin-left: auto;
+      color: #6f8497;
+      font-family: "Courier New", monospace;
+      font-size: 0.75rem;
+    }
+
+    .terminal-body {
+      min-height: 310px;
+      padding: 1.5rem;
+      color: #b9cad9;
+      font-family: "Courier New", monospace;
+      font-size: 0.93rem;
+      line-height: 1.9;
+    }
+
+    .prompt {
+      color: var(--accent);
+    }
+
+    .command {
+      color: var(--text);
+    }
+
+    .terminal-muted {
+      color: #7e93a6;
+    }
+
+    .terminal-blue {
+      color: var(--blue);
+    }
+
+    .terminal-cursor {
+      display: inline-block;
+      width: 9px;
+      height: 1rem;
+      margin-left: 0.2rem;
+      vertical-align: -0.14rem;
+      background: var(--accent);
+      animation: blink 1.1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    section {
+      padding: 6rem 0;
+      scroll-margin-top: 72px;
+    }
+
+    .stats {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stat {
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.025),
+        rgba(255, 255, 255, 0.012)
+      );
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--accent);
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 0.55rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .project-grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-card {
+      position: relative;
+      display: flex;
+      min-height: 340px;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 1.45rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent),
+        var(--surface);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(54, 227, 165, 0.43);
+    }
+
+    .project-number {
+      color: rgba(255, 255, 255, 0.08);
+      font-family: "Courier New", monospace;
+      font-size: 4.4rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .project-tag {
+      display: inline-flex;
+      align-self: flex-start;
+      margin: 0.35rem 0 1rem;
+      padding: 0.35rem 0.65rem;
+      border: 1px solid rgba(93, 183, 255, 0.25);
+      border-radius: 999px;
+      background: rgba(93, 183, 255, 0.08);
+      color: #b9dcff;
+      font-size: 0.72rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.75rem;
+      font-size: 1.28rem;
+      line-height: 1.25;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 1.1rem;
+    }
+
+    .tech-list span {
+      padding: 0.3rem 0.58rem;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.025);
+      color: #bfd0df;
+      font-family: "Courier New", monospace;
+      font-size: 0.72rem;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: auto;
+      padding-top: 1.3rem;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 850;
+    }
+
+    .project-link:hover {
+      color: #78f3c7;
+    }
+
+    .about-grid {
+      display: grid;
+      align-items: start;
+      gap: 3rem;
+      grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .profile-panel,
+    .about-copy {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .profile-panel {
+      padding: 1.6rem;
+    }
+
+    .profile-photo {
+      display: grid;
+      min-height: 360px;
+      place-items: center;
+      overflow: hidden;
+      border: 1px dashed rgba(54, 227, 165, 0.28);
+      border-radius: 14px;
+      background:
+        linear-gradient(rgba(54, 227, 165, 0.05), rgba(93, 183, 255, 0.04)),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 22px,
+          rgba(255, 255, 255, 0.02) 23px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 22px,
+          rgba(255, 255, 255, 0.02) 23px
+        );
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .profile-photo strong {
+      display: block;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .profile-photo span {
+      font-size: 0.83rem;
+    }
+
+    .about-copy {
+      padding: 2rem;
+    }
+
+    .about-copy p {
+      margin-bottom: 1rem;
+      color: var(--muted);
+    }
+
+    .focus-list {
+      display: grid;
+      gap: 0.8rem;
+      margin-top: 1.4rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .focus-item {
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface-light);
+      color: #d8e6f2;
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+
+    .focus-item::before {
+      margin-right: 0.55rem;
+      color: var(--accent);
+      content: "✓";
+    }
+
+    .cert-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cert-card {
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: var(--surface);
+    }
+
+    .cert-icon {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      margin-bottom: 1rem;
+      place-items: center;
+      border-radius: 13px;
+      background: rgba(54, 227, 165, 0.09);
+      color: var(--accent);
+      font-family: "Courier New", monospace;
+      font-weight: 900;
+    }
+
+    .cert-card h3 {
+      margin-bottom: 0.35rem;
+      font-size: 1.05rem;
+    }
+
+    .cert-card p {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .cert-status {
+      display: inline-block;
+      margin-top: 0.9rem;
+      color: var(--blue);
+      font-size: 0.78rem;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+
+    .skills-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .skill-group {
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: var(--surface);
+    }
+
+    .skill-group h3 {
+      margin-bottom: 0.9rem;
+      color: var(--accent);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .skill-group ul {
+      list-style: none;
+    }
+
+    .skill-group li {
+      padding: 0.42rem 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .skill-group li::before {
+      margin-right: 0.5rem;
+      color: var(--blue);
+      content: "›";
+    }
+
+    .contact-panel {
+      display: grid;
+      align-items: center;
+      gap: 2rem;
+      padding: clamp(1.7rem, 5vw, 3rem);
+      border: 1px solid rgba(54, 227, 165, 0.25);
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at right top, rgba(93, 183, 255, 0.11), transparent 20rem),
+        linear-gradient(135deg, rgba(54, 227, 165, 0.08), rgba(255, 255, 255, 0.015)),
+        var(--surface);
+      grid-template-columns: 1fr auto;
+    }
+
+    .contact-panel h2 {
+      margin-bottom: 0.7rem;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.04em;
+    }
+
+    .contact-panel p {
+      max-width: 660px;
+      color: var(--muted);
+    }
+
+    .footer {
+      padding: 2rem 0 2.5rem;
+      color: #71879a;
+      font-size: 0.86rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-links a:hover {
+      color: var(--accent);
+    }
+
+    :focus-visible {
+      outline: 3px solid rgba(93, 183, 255, 0.55);
+      outline-offset: 3px;
+    }
+
+    .featured-project {
+      display: grid;
+      align-items: stretch;
+      gap: 2rem;
+      padding: clamp(1.5rem, 4vw, 2.4rem);
+      border: 1px solid rgba(54, 227, 165, 0.32);
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(54, 227, 165, 0.1), transparent 22rem),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent),
+        var(--surface);
+      box-shadow: var(--shadow);
+      grid-template-columns: 1.15fr 0.85fr;
+    }
+
+    .featured-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .featured-content h3 {
+      margin-bottom: 0.9rem;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .featured-content p {
+      color: var(--muted);
+    }
+
+    .featured-highlights {
+      display: grid;
+      gap: 0.55rem;
+      margin-top: 1.1rem;
+      list-style: none;
+    }
+
+    .featured-highlights li {
+      position: relative;
+      padding-left: 1.3rem;
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .featured-highlights li::before {
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      content: "›";
+      font-weight: 900;
+    }
+
+    .featured-highlights strong {
+      color: var(--text);
+    }
+
+    .featured-why {
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      border-left: 3px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      background: rgba(54, 227, 165, 0.06);
+      font-size: 0.95rem;
+    }
+
+    .featured-why strong {
+      color: var(--text);
+    }
+
+    .featured-button {
+      align-self: flex-start;
+      margin-top: 1.6rem;
+    }
+
+    .featured-terminal {
+      align-self: start;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(7, 16, 25, 0.9);
+    }
+
+    .featured-terminal-body {
+      min-height: 0;
+      font-size: 0.85rem;
+      overflow-wrap: anywhere;
+    }
+
+    .transfer-heading {
+      margin-top: 5rem;
+    }
+
+    .transfer-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .transfer-card {
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--accent);
+      border-radius: 15px;
+      background: var(--surface);
+    }
+
+    .transfer-from {
+      display: block;
+      margin-bottom: 0.6rem;
+      color: var(--blue);
+      font-size: 0.72rem;
+      font-weight: 850;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .transfer-card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+      line-height: 1.3;
+    }
+
+    .transfer-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .roadmap-heading {
+      margin-top: 5rem;
+    }
+
+    .project-card .project-status {
+      display: inline-flex;
+      align-self: flex-start;
+      margin-top: auto;
+      padding-top: 1.3rem;
+      color: var(--blue);
+      font-size: 0.78rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 980px) {
+      .featured-project {
+        grid-template-columns: 1fr;
+      }
+
+      .transfer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .terminal-card {
+        max-width: 680px;
+      }
+
+      .project-grid,
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .skills-grid,
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 740px) {
+      .menu-button {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 72px;
+        right: 1rem;
+        left: 1rem;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: #0b1721;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.is-open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 0.55rem;
+      }
+
+      .project-grid,
+      .cert-grid,
+      .skills-grid,
+      .transfer-grid,
+      .stats,
+      .focus-list,
+      .contact-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 3.5rem;
+      }
+
+      section {
+        padding: 4.8rem 0;
+      }
+
+      .contact-panel {
+        align-items: start;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Go to homepage">
+        <span class="brand-mark">&gt;_</span>
+        <span>ROBERT_BEASLEY</span>
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            Career changer · Building toward AI Engineering &amp; AI Security
+          </div>
+
+          <p class="eyebrow">AI Engineering · AI Security</p>
+
+          <h1>
+            I used to fix systems.<br />
+            <span>Now I build and secure AI.</span>
+          </h1>
+
+          <p class="hero-copy">
+            I spent my career as an HVAC and appliance technician, diagnosing
+            complex systems in the field. Now I'm applying that same troubleshooting
+            mindset to AI: building applications on large language models, and
+            testing how they fail, get attacked, and get defended.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="https://github.com/ChuckZoro/Ubuntu-server-"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Ubuntu Server Project ↗
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/ChuckZoro"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub Profile
+            </a>
+            <a
+              class="button button-secondary"
+              href="resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download Résumé
+            </a>
+          </div>
+        </div>
+
+        <aside class="terminal-card" aria-label="Terminal-style professional summary">
+          <div class="terminal-bar">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-title">portfolio-terminal</span>
+          </div>
+
+          <div class="terminal-body">
+            <p>
+              <span class="prompt">visitor@portfolio:~$</span>
+              <span class="command"> whoami</span>
+            </p>
+            <p class="terminal-blue">Robert Beasley</p>
+
+            <br />
+
+            <p>
+              <span class="prompt">visitor@portfolio:~$</span>
+              <span class="command"> cat career.log</span>
+            </p>
+            <p class="terminal-muted">
+              [prev] hvac &amp; appliance technician<br />
+              [now]&nbsp; network+ certified, running a home lab<br />
+              [next] ai engineering &amp; ai security
+            </p>
+
+            <br />
+
+            <p>
+              <span class="prompt">visitor@portfolio:~$</span>
+              <span class="command"> cat focus.txt</span>
+            </p>
+            <p class="terminal-muted">
+              ai engineering · ai security · secure infra
+            </p>
+
+            <br />
+
+            <p>
+              <span class="prompt">visitor@portfolio:~$</span>
+              <span class="command"> status</span>
+            </p>
+            <p>Building. Breaking. Securing.<span class="terminal-cursor"></span></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section aria-label="Portfolio highlights">
+      <div class="container stats">
+        <div class="stat">
+          <strong>06</strong>
+          <span>Self-hosted services</span>
+        </div>
+        <div class="stat">
+          <strong>N+</strong>
+          <span>CompTIA Network+ certified</span>
+        </div>
+        <div class="stat">
+          <strong>HVAC</strong>
+          <span>Field technician background</span>
+        </div>
+        <div class="stat">
+          <strong>0</strong>
+          <span>Open firewall ports</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Project</p>
+          <h2>Infrastructure first. AI on top.</h2>
+          <p>
+            Every AI system runs on servers, networks, and access controls. My
+            flagship project is the foundation I'm building my AI work on.
+          </p>
+        </div>
+
+        <article class="featured-project">
+          <div class="featured-content">
+            <span class="project-tag">Infrastructure · Security</span>
+            <h3>Ubuntu Server Home Lab</h3>
+            <p>
+              A Docker-based home lab on Ubuntu Server 26.04, built and documented
+              step by step. It hosts six containerized services behind a reverse
+              proxy with HTTPS, uses my own DNS server, and is reachable remotely
+              without opening a single firewall port.
+            </p>
+            <ul class="featured-highlights">
+              <li><strong>Zero open ports.</strong> Remote access runs through an outbound Cloudflare Tunnel, and only the monitoring dashboard is exposed.</li>
+              <li><strong>HTTPS everywhere.</strong> Nginx Proxy Manager routes traffic over a shared Docker network with TLS certificates.</li>
+              <li><strong>Hardened SSH.</strong> Key-only login, with password and root login disabled.</li>
+              <li><strong>Monitoring and alerts.</strong> Uptime Kuma watches every service and sends Telegram alerts when one goes down.</li>
+            </ul>
+            <p class="featured-why">
+              <strong>Why it matters for AI:</strong> I created a locked-down,
+              key-only account so an AI agent can work on this server with limited
+              privileges. Least-privilege access for AI agents is a core problem
+              in AI security, and I've already practiced it.
+            </p>
+            <div class="tech-list">
+              <span>Ubuntu Server</span>
+              <span>Docker Compose</span>
+              <span>Nginx Proxy Manager</span>
+              <span>Pi-hole</span>
+              <span>Cloudflare Tunnel</span>
+              <span>Vaultwarden</span>
+              <span>Uptime Kuma</span>
+              <span>SSH</span>
+            </div>
+            <a
+              class="button button-primary featured-button"
+              href="https://github.com/ChuckZoro/Ubuntu-server-"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View the Project on GitHub ↗
+            </a>
+          </div>
+
+          <div class="featured-terminal" aria-hidden="true">
+            <div class="terminal-bar">
+              <span class="terminal-dot"></span>
+              <span class="terminal-dot"></span>
+              <span class="terminal-dot"></span>
+              <span class="terminal-title">ubuntu-server</span>
+            </div>
+            <div class="terminal-body featured-terminal-body">
+              <p>
+                <span class="prompt">$</span>
+                <span class="command"> docker ps --format "{{.Names}}"</span>
+              </p>
+              <p class="terminal-blue">
+                pihole<br />
+                nginx-proxy-manager<br />
+                vaultwarden<br />
+                immich_server<br />
+                filebrowser<br />
+                uptime-kuma
+              </p>
+              <br />
+              <p>
+                <span class="prompt">$</span>
+                <span class="command"> sshd -T | grep passwordauth</span>
+              </p>
+              <p class="terminal-muted">passwordauthentication no</p>
+              <br />
+              <p>
+                <span class="prompt">$</span>
+                <span class="command"> cloudflared tunnel list</span>
+              </p>
+              <p>outbound only · 0 open ports<span class="terminal-cursor"></span></p>
+            </div>
+          </div>
+        </article>
+
+        <div class="section-heading roadmap-heading">
+          <p class="eyebrow">Up Next</p>
+          <h2>Where the work is heading.</h2>
+          <p>
+            AI engineering and AI security projects I'm building on that
+            foundation, starting with the field I know best. Each will get its own
+            repository as it ships.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <span class="project-tag">AI Engineering</span>
+            <h3>HVAC Diagnostic Assistant</h3>
+            <p>
+              A retrieval-augmented (RAG) assistant that answers technician
+              questions from service manuals and fault-code charts, with cited
+              sources. Built by someone who has actually run the service calls.
+            </p>
+            <div class="tech-list">
+              <span>Python</span>
+              <span>RAG</span>
+              <span>LLM APIs</span>
+            </div>
+            <span class="project-status">Planned</span>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <span class="project-tag">AI Security</span>
+            <h3>Prompt Injection Test Harness</h3>
+            <p>
+              A repeatable test suite that attacks the diagnostic assistant with
+              prompt injection and data-leakage attempts, then maps findings and
+              fixes to the OWASP Top 10 for LLM Applications.
+            </p>
+            <div class="tech-list">
+              <span>Python</span>
+              <span>OWASP LLM Top 10</span>
+              <span>Red Teaming</span>
+            </div>
+            <span class="project-status">Planned</span>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">04</div>
+            <span class="project-tag">AI Infrastructure</span>
+            <h3>Self-Hosted LLM on Ubuntu Server</h3>
+            <p>
+              Run an open-weight language model on my own server with locked-down
+              access, logging, and monitoring, so the whole stack is mine to
+              build, attack, and defend.
+            </p>
+            <div class="tech-list">
+              <span>Open-weight LLMs</span>
+              <span>Linux</span>
+              <span>Access Control</span>
+            </div>
+            <span class="project-status">Planned</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">About Me</p>
+          <h2>From the service van to AI security.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="profile-panel">
+            <div class="profile-photo">
+              <div>
+                <strong>Add a professional photo here</strong>
+                <span>Replace this box with an &lt;img&gt; element</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <p>
+              Before cybersecurity, I worked as an HVAC and appliance technician.
+              Every service call was an investigation: gather the symptoms, test
+              each component, find the root cause, fix it, and explain it to a
+              customer who just wanted their heat back.
+            </p>
+
+            <p>
+              AI systems need that same loop. Models fail in ways that aren't
+              obvious, and finding out why takes patient, methodical testing. I'm
+              making the move deliberately: earning CompTIA Network+, building a
+              documented Docker home lab on Ubuntu Server, and working toward AI
+              engineering and AI security.
+            </p>
+
+            <p>
+              I've also seen what happens when technology gets connected faster
+              than it gets secured. The 2013 Target breach famously began with
+              credentials stolen from an HVAC vendor. AI is being wired into
+              business systems even faster today, and I want to be the person who
+              builds it well and secures it properly.
+            </p>
+
+            <div class="focus-list">
+              <div class="focus-item">AI Engineering</div>
+              <div class="focus-item">AI Security</div>
+              <div class="focus-item">LLM Applications</div>
+              <div class="focus-item">Secure Infrastructure</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-heading transfer-heading">
+          <p class="eyebrow">Transferable Skills</p>
+          <h2>What the field already taught me.</h2>
+        </div>
+
+        <div class="transfer-grid">
+          <article class="transfer-card">
+            <span class="transfer-from">In the field</span>
+            <h3>Diagnose before you replace</h3>
+            <p>
+              Systematic troubleshooting and root-cause analysis, not guessing.
+              The same skill behind debugging and evaluating AI systems.
+            </p>
+          </article>
+
+          <article class="transfer-card">
+            <span class="transfer-from">In the field</span>
+            <h3>Calm on the emergency call</h3>
+            <p>
+              No-heat calls in January and failures on a deadline. Prioritizing
+              and working steadily under pressure, like incident response.
+            </p>
+          </article>
+
+          <article class="transfer-card">
+            <span class="transfer-from">In the field</span>
+            <h3>Explain it to the customer</h3>
+            <p>
+              Translating a technical problem into plain language for someone
+              who isn't technical. Exactly what explaining AI risk requires.
+            </p>
+          </article>
+
+          <article class="transfer-card">
+            <span class="transfer-from">In the field</span>
+            <h3>Follow the procedure</h3>
+            <p>
+              Codes, safety steps, and documentation done right every time. The
+              same discipline behind repeatable testing and security controls.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Credentials</p>
+          <h2>Certifications and current study.</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="cert-card">
+            <div class="cert-icon">N+</div>
+            <h3>CompTIA Network+</h3>
+            <p>Networking concepts, infrastructure, operations, security, and troubleshooting.</p>
+            <span class="cert-status">Completed</span>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-icon">AI</div>
+            <h3>AI Security Study</h3>
+            <p>OWASP Top 10 for LLM Applications, MITRE ATLAS, and LLM threat modeling.</p>
+            <span class="cert-status">Ongoing</span>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-icon">SEC+</div>
+            <h3>CompTIA Security+</h3>
+            <p>Core security concepts, threats, architecture, operations, and governance.</p>
+            <span class="cert-status">Planned</span>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-icon">CCNA</div>
+            <h3>Cisco Certified Network Associate</h3>
+            <p>Networking fundamentals, routing, switching, security, and automation.</p>
+            <span class="cert-status">Currently Studying</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>Tools, platforms, and security foundations.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>AI &amp; LLMs</h3>
+            <ul>
+              <li>Python</li>
+              <li>LLM APIs</li>
+              <li>Prompt engineering</li>
+              <li>RAG fundamentals</li>
+              <li>AI threat modeling</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Security</h3>
+            <ul>
+              <li>OWASP LLM Top 10</li>
+              <li>Log analysis</li>
+              <li>Traffic inspection</li>
+              <li>Access control</li>
+              <li>Security documentation</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Infrastructure</h3>
+            <ul>
+              <li>Ubuntu Server administration</li>
+              <li>Docker and Docker Compose</li>
+              <li>DNS with Pi-hole</li>
+              <li>Reverse proxy and HTTPS</li>
+              <li>SSH hardening</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git and GitHub</li>
+              <li>Cloudflare Tunnel</li>
+              <li>Uptime Kuma</li>
+              <li>Wireshark</li>
+              <li>Nmap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect.</h2>
+            <p>
+              I'm looking for opportunities in AI engineering, AI security, and
+              the security and infrastructure roles that lead there, where a
+              troubleshooter's mindset and real-world field experience are an asset.
+            </p>
+          </div>
+
+          <!-- Replace YOUR-LINKEDIN with the last part of your LinkedIn profile URL -->
+          <a
+            class="button button-primary"
+            href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="currentYear"></span> Robert Beasley. Built for GitHub Pages.</p>
+
+      <div class="social-links" aria-label="Social links">
+        <a
+          href="https://github.com/ChuckZoro"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+
+        <!-- Replace YOUR-LINKEDIN with the last part of your LinkedIn profile URL -->
+        <a
+          href="https://www.linkedin.com/in/YOUR-LINKEDIN"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const navLinks = document.getElementById("navLinks");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.textContent = "☰";
+      });
+    });
+
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
